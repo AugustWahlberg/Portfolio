@@ -23,7 +23,11 @@ body {
 .menu a, li{
   color: var(--white);
   text-decoration: none;
-  font-size: 22px;
+  font-size: 26px;
+}
+
+.menu a:hover {
+  color: var(--gold);
 }
 
 .menu {
@@ -31,6 +35,10 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 40px;
+}
+
+header {
+   background: var(--navy);
 }
 
 .menu ul {
@@ -47,26 +55,232 @@ body {
 }
 
 .home {
-  background-image: url("/images/background-portofolio-test.png");
-  height: 100vh;
+  background-image: url("/images/backround_portfolio2.png");
+  height: 92vh;
   min-height: 800px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  text-align: center;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
   font-family: var(--heading-font);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  color: var(--gold);
+}
+
+h3, h4 {
+  color: var(--white);
 }
 
 h1 {
-  color: var(--gold);
-  text-transform: uppercase;
   font-weight: 900;
+  padding-top: 200px;
+  font-size: 46px;
 }
 
 h2 {
-  color: var(--white);
-  text-transform: uppercase;
+  font-weight: 900;
+  padding-top: 80px;
+  font-size: 40px;
+}
+
+h3 {
   font-weight: 200;
+  font-size: 36px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.work-box {
+  text-align: center;
+  width: 800px;
+  margin: 60px;
+}
+
+.work-box p {
+  color: var(--gold);
+  font-size: 22px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.work-image {
+  height: 500px;
+  width: 800px;
+  background-color: var(--occean);
+  border: 4px solid var(--white);
+  object-fit: cover;
+}
+.btn {
+  margin-top: 10px;
+  width: 25%;
+  font-size: 20px;
+  background: none;
+  border: 1px solid var(--occean);
+  border-radius: 20px;
+  color: var(--occean);
+  padding: 8px;
+  margin: 20px;
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.btn:active {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background-color: var(--burgunder);
+}
+
+.work-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 2000px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--burgunder);
+  border-top: 1px solid var(--orange);
+  padding-bottom: 40px;
+}
+
+.footer-content {
+  width: 320px;
+  margin: 0 auto;
+}
+
+
+footer h2{
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+footer a{
+  color: var(--white);
+  font-size: 22px;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.fab{
+  color: var(--gold);
+  padding-right: 15px;
+}
+
+.fa-angle-down {
+  margin-top: 2vh;
+}
+
+
+
+/* Icon styling from Fontawsome*/
+
+.fa-github:before {
+  content: "\f09b"
+}
+
+.fa-linkedin:before {
+  content: "\f08c"
+}
+
+.fa-envelope:before {
+  content: "\f0e0"
+}
+
+.fa-angle-down:before {
+  content: "\f107"
+}
+
+.fa-1x {
+  font-size: 1em
+}
+
+.fa-2x {
+  font-size: 2em
+}
+
+.fa-3x {
+  font-size: 3em
+}
+
+.fa-4x {
+  font-size: 4em
+}
+
+.fa-5x {
+  font-size: 5em
+}
+
+.fa-brands,
+.fab {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400
+}
+
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900)
+}
+
+.fa,
+.fa-brands,
+.fa-solid,
+.fab,
+.fas
+ {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto
+}
+
+:host,
+:root {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.ttf) format("truetype")
+}
+
+.fa-solid,
+.fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../webfonts/fa-brands-400.woff2) format("woff2"), url(../webfonts/fa-brands-400.ttf) format("truetype")
 }
