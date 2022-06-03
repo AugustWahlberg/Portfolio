@@ -26,10 +26,6 @@ body {
   font-size: 26px;
 }
 
-.menu a:hover {
-  color: var(--gold);
-}
-
 .menu {
   display: flex;
   align-items: center;
@@ -55,7 +51,7 @@ header {
 }
 
 .home {
-  background-image: url("/images/backround_portfolio2.png");
+  background-image: url("/images/backround_portfolio.png");
   height: 92vh;
   min-height: 800px;
   background-position: center; 
@@ -192,7 +188,13 @@ footer a{
 .fa-angle-down {
   margin-top: 2vh;
   cursor: pointer;
+  color: var(--white);
 }
+
+.fa-angle-down:hover, a:hover{
+  color: var(--gold);
+}
+
 
 
 
@@ -215,16 +217,8 @@ footer a{
   content: "\f107"
 }
 
-.fa-1x {
-  font-size: 1em
-}
-
 .fa-2x {
   font-size: 1.8em
-}
-
-.fa-3x {
-  font-size: 3em
 }
 
 .fa-4x {
@@ -235,11 +229,6 @@ footer a{
 .fab {
   font-family: "Font Awesome 6 Brands";
   font-weight: 400
-}
-
-.fa {
-  font-family: var(--fa-style-family, "Font Awesome 6 Free");
-  font-weight: var(--fa-style, 900)
 }
 
 .fa,
