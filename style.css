@@ -102,6 +102,15 @@ h4 {
   padding: 0px;
 }
 
+.work-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 2000px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
 .work-box {
   text-align: center;
   width: 800px;
@@ -124,10 +133,10 @@ h4 {
 }
 .btn {
   margin-top: 10px;
-  width: 25%;
+  width: 200px;
   font-size: 20px;
   background: none;
-  border: 1px solid var(--occean);
+  border: 2px solid var(--occean);
   border-radius: 20px;
   color: var(--occean);
   padding: 8px;
@@ -145,15 +154,6 @@ h4 {
   border: 1px solid var(--gold);
   color: var(--gold);
   background-color: var(--burgunder);
-}
-
-.work-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 2000px;
-  margin: 0 auto;
-  margin-bottom: 80px;
 }
 
 footer {
@@ -179,8 +179,9 @@ footer a{
   color: var(--white);
   font-size: 22px;
   display: inline-block;
-  padding-top: 15px;
+
   padding-bottom: 15px;
+  line-height: 2.5;
 }
 
 .fab{
@@ -190,7 +191,9 @@ footer a{
 
 .fa-angle-down {
   margin-top: 2vh;
+  cursor: pointer;
 }
+
 
 
 
@@ -217,7 +220,7 @@ footer a{
 }
 
 .fa-2x {
-  font-size: 2em
+  font-size: 1.8em
 }
 
 .fa-3x {
@@ -226,10 +229,6 @@ footer a{
 
 .fa-4x {
   font-size: 4em
-}
-
-.fa-5x {
-  font-size: 5em
 }
 
 .fa-brands,
@@ -283,4 +282,75 @@ footer a{
   font-weight: 400;
   font-display: block;
   src: url(../webfonts/fa-brands-400.woff2) format("woff2"), url(../webfonts/fa-brands-400.ttf) format("truetype")
+}
+
+
+/* Responsive styling*/
+
+@media (max-width: 768px) {
+
+ 
+  
+  .work-box {
+    text-align: center;
+    width: 320px;
+    margin: 50px;
+  }
+  
+  .work-box p {
+    font-size: 18px;
+  }
+  
+  .work-image {
+    height: 200px;
+    width: 320px;
+  }
+
+  .btn {
+    width: 130px;
+    font-size: 16px;
+    padding: 6px;
+    margin: 10px;
+    margin-top: 16px;
+  }
+
+  .menu a, li{
+    font-size: 20px;
+  }
+
+  .menu ul li {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 24px;
+  }
+
+  footer a{
+    font-size: 18px;
+  }
+
+  .footer-content {
+    width: 266px;
+  }
+
+  .fa-4x {
+    font-size: 2.5em;
+  }
+
+  .fa-2x {
+    font-size: 1.5em
+  }
 }
