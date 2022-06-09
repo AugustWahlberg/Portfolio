@@ -12,7 +12,7 @@ This is my portfolio site for my first year as a frontend developer.
 * JavaScript
 
 ## Contributing
-I appreciate any suggested improvements you may way, feel free to open a pull request if you want to get involved in this project.
+I appreciate any suggested improvements you may have, feel free to open a pull request if you want to get involved in this project.
 
 ## Contact
 My LinkedIn page: https://www.linkedin.com/in/augwahlberg/  
