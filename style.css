@@ -30,7 +30,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding: 20px;
 }
 
 header {
@@ -78,6 +78,7 @@ h1 {
   font-weight: 900;
   padding-top: 200px;
   font-size: 46px;
+  margin: 0px;
 }
 
 h2 {
@@ -194,9 +195,6 @@ footer a{
 .fa-angle-down:hover, a:hover{
   color: var(--gold);
 }
-
-
-
 
 
 /* Icon styling from Fontawsome*/
