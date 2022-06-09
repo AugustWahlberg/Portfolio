@@ -1,10 +1,10 @@
 # Portfolio - August Wahlberg
 ![printscreen-portfolio-website](https://user-images.githubusercontent.com/91577070/172948993-7708506c-f387-4142-ad1f-63e640c35410.png)
 
-My personal portfolio website displaying my first four websites.
+My personal portfolio website. 
 
 ## Description
-This is my portfolio site for my first year as a frontend developer. 
+This is my portfolio site for my first year as a frontend developer. As per now the portfolio display my first four website, but will constantly be updated.
 
 ## Built With
 * HTML
