@@ -4,7 +4,7 @@
 **My personal portfolio website** 
 
 ## Description
-This is my portfolio site for my first year as a frontend developer. As per now the portfolio display my first four website, but will constantly be updated.
+This is my portfolio site for my first year as a frontend developer. As per now the portfolio display my first four website, but will constantly be updated. The illustration on the site is own made. It represents me as a person - a calm and collected person who gets inspired by sensations. 
 
 ## Built With
 * HTML
