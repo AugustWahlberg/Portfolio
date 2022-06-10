@@ -24,3 +24,16 @@ document.getElementById("rd-web").onclick = function () {
 document.getElementById("rd-git").onclick = function () {
   location.href = "https://github.com/Noroff-FEU-Assignments/cross-course-project-AugustWahlberg";
 };
+
+
+document.getElementById("csm-web").onclick = function () {
+  location.href = "https://csm-august-wahlberg.netlify.app/";
+};
+
+document.getElementById("csm-git").onclick = function () {
+  location.href = "https://github.com/AugustWahlberg/Community-Science-Museum";
+};
+
+document.getElementById("portfolio-git").onclick = function () {
+  location.href = "https://github.com/AugustWahlberg/Portfolio";
+};
