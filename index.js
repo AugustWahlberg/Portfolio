@@ -14,3 +14,13 @@ document.getElementById("ff-web").onclick = function () {
 document.getElementById("ff-git").onclick = function () {
   location.href = "https://github.com/Noroff-FEU-Assignments/project-exam-1-AugustWahlberg";
 };
+
+
+document.getElementById("rd-web").onclick = function () {
+  location.href = "https://rainy-days-august-wahlberg.netlify.app/";
+};
+
+
+document.getElementById("rd-git").onclick = function () {
+  location.href = "https://github.com/Noroff-FEU-Assignments/cross-course-project-AugustWahlberg";
+};
