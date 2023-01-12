@@ -5,18 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="In this portfolio I present my four websites projects I have created during my first year as a frontend developer.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Portfolio, frontend development, developer, websites, projects, Ecology, web design">
+  <meta name="keywords" content="Portfolio, frontend development, developer, websites, projects, web design">
   <title>Portfolio August Wahlberg</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <div class="menu" id="home" >
+    <div class="menu">
     <ul>
       <li><a href="#home"><b>Home</b></a></li>
       <li>|</li>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#websites" id="websites-li">Websites</a></li>
+      <li>|</li>
+      <li><a href="#otherProjects">Other Projects</a></li>
       <li>|</li>
       <li><a href="#contact">Contact</a></li>
   </ul>
@@ -25,52 +27,135 @@
 
   <main>
 
-    <div class="home">
+    <div class="home" id="home">
       <h1>August Wahlberg</h1>
       <h3>Creative developer</h3>
       <i class="fab fa-solid fa-angle-down fa-4x" id="go-down" ></i>
     </div>
 
-    <div class="work" id="work">
-      <h2>Work</h2>
+    <div class="work" id="websites">
+      <h2>Websites</h2>
 
-      <div class="work-container">
-
-
-        <div class="work-box">
-          <h4>Frontend Freakz</h4>
-          <p>~ Blog website for frontend students ~</p>
-          <img class="work-image" src="/images/printscreen-frontend-freakz-website.png" alt="Screenshot Frontend Freakz Website">
-            <button class="btn" id="ff-web">Go to website</button>
-            <button class="btn" id="ff-git">Go to GitHub</button>  
-        </div>
-     
+      <div class="work-container"> 
 
       <div class="work-box">
         <h4>Rainy Days</h4>
-        <p>~ Website for outdoor jackets ~</p>
+        <p>~ Website for outdoor jackets, 2022 ~</p>
         <img class="work-image" src="/images/printscreen-rainy-days.png" alt="Screenshot Rainy Days Website">
+        <div class="tags">
+          <p class="tag">HTML</p>
+          <p class="tag">Post CSS</p>
+          <p class="tag">Tailwind</p>
+          <p class="tag">JavaScript</p>
+        </div>
           <button class="btn" id="rd-web">Go to website</button>
           <button class="btn" id="rd-git">Go to GitHub</button>  
       </div>
 
       <div class="work-box">
+        <h4>Frontend Freakz</h4>
+        <p>~ Blog website for frontend students, 2022 ~</p>
+        <img class="work-image" src="/images/printscreen-frontend-freakz-website.png" alt="Screenshot Frontend Freakz Website">
+        <div class="tags" id="change-color-point">
+          <p class="tag">HTML</p>
+          <p class="tag">CSS</p>
+          <p class="tag">JavaScript</p>
+        </div>
+
+          <button class="btn" id="ff-web">Go to website</button>
+          <button class="btn" id="ff-git">Go to GitHub</button>  
+      </div>
+
+      <div class="work-box">
         <h4>CSM</h4>
-        <p>~ Website for local science museum ~</p>
+        <p>~ Website for local science museum, 2021~</p>
         <img class="work-image" src="/images/printscreen-csm.png" alt="Screenshot Community Science Museum Website">
+
+        <div class="tags">
+          <p class="tag">HTML</p>
+          <p class="tag">CSS</p>
+          <p class="tag">JavaScript</p>
+          <p class="tag">Illustration work</p>
+        </div>
+
           <button class="btn" id="csm-web">Go to website</button>
           <button class="btn" id="csm-git">Go to GitHub</button>  
       </div>
 
       <div class="work-box">
         <h4>Portfolio</h4>
-        <p>~ Personal portfolio website ~</p>
+        <p>~ Personal portfolio website, 2022 ~</p>
         <img class="work-image" src="/images/printscreen-portfolio-website.png" alt="Screenshot Portfolio Website">
+        <div class="tags">
+          <p class="tag">Javascript</p>
+          <p class="tag">HTML</p>
+          <p class="tag">CSS</p>
+          <p class="tag">Illustration work</p>
+        </div>
           <button class="btn" id="portfolio-git">Go to GitHub</button>  
       </div>
-
     </div>
   </div>
+
+
+ <div class="other-projects-container" id="otherProjects">
+
+  <h2>Other Projects</h2>
+
+  <div class="other-wrapper">
+
+    <div class="other-projects">
+      <h4>Aspire </h4>
+      <p>~ Logo department in DNB, 2022 ~</p>
+      <img class=" other-projects-image" src="/images/logo_aspire.png" alt="Screenshot Portfolio Website">
+      <div class="tags">
+        <p class="tag">Logo</p>
+        <p class="tag">Real costumer</p>
+        <p class="tag">Illustrator</p>
+      </div>
+    </div>
+  
+    <div class="other-projects">
+      <h4>Noia Studio </h4>
+      <p>~ Logo web development company, 2021 ~</p>
+      <img class="other-projects-image" src="/images/logo_noia_studio.png" alt="Screenshot Portfolio Website">
+      <div class="tags">
+        <p class="tag">Logo</p>
+        <p class="tag">Real costumer</p>
+        <p class="tag">Illustrator</p>
+      </div>
+    </div>
+  
+    <div class="other-projects">
+      <h4>Oslo Baking Festival </h4>
+      <p>~ Poster for baking festival, 2020 ~</p>
+      <img class="other-projects-image" src="/images/oslo-banking-festival.png" alt="Screenshot Portfolio Website">
+      <div class="tags">
+        <p class="tag">Fictive Costumer</p>
+        <p class="tag">InDesign</p>
+        <p class="tag">illustrator</p>
+      </div>
+        <button class="btn" id="poster-pdf">View</button>  
+    </div>
+  
+    <div class="other-projects">
+      <h4>In depth </h4>
+      <p>~ Magazine for .., 2020 ~</p>
+      
+      <img class="other-projects-image" src="/images/magazine-cover.PNG" alt="Screenshot Portfolio Website">
+      <div class="tags">
+        <p class="tag">Fictive Costumer</p>
+        <p class="tag">InDesign</p>
+        <p class="tag">Illustrator</p>
+      </div>
+        <button class="btn" id="magazine-pdf">View</button>  
+    </div>
+
+
+  </div>
+  
+</div>
+
   </main>
 
   <footer id="contact">

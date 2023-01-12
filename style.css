@@ -2,12 +2,15 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
   --gold: #FFE9B7;
   --white: #FFFFFF;
+  --night-red: #1C1930;
   --navy: #050D25;
+  --light-navy: #0B1532;
   --burgunder: #4B3446;
   --occean: #5D7CC8;
   --body-font: 'Source Sans Pro', sans-serif;
@@ -23,7 +26,7 @@ body {
 .menu a, li{
   color: var(--white);
   text-decoration: none;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .menu {
@@ -34,7 +37,10 @@ body {
 }
 
 header {
-   background: var(--navy);
+   background: var(--night-red);
+   position: sticky;
+   top: 0;
+   border-bottom: 1px solid var(--gold);
 }
 
 .menu ul {
@@ -47,7 +53,7 @@ header {
 .menu ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
 }
 
 .home {
@@ -59,6 +65,8 @@ header {
   background-size: cover; 
   text-align: center;
 }
+
+/* fonts */
 
 h1, h2, h3, h4{
   font-family: var(--heading-font);
@@ -99,6 +107,12 @@ h4 {
   padding: 0px;
 }
 
+/* Containers and boxes */
+
+.work {
+  padding-top: 60px;
+}
+
 .work-container{
   display: flex;
   flex-wrap: wrap;
@@ -110,15 +124,18 @@ h4 {
 
 .work-box {
   text-align: center;
-  width: 800px;
+  width: auto;
   margin: 60px;
 }
 
 .work-box p {
   color: var(--gold);
   font-size: 22px;
-  margin: 10px;
-  margin-bottom: 20px;
+}
+
+.work-box .tags p {
+  font-size: 18px;
+  color: var(--white);
 }
 
 .work-image {
@@ -128,8 +145,68 @@ h4 {
   border: 4px solid var(--white);
   object-fit: cover;
 }
-.btn {
+
+.work-image, .other-projects-image {
+  box-shadow: 5px 5px 10px 0px rgba(255, 255, 255, 0.3);
+}
+
+.tag {
+  background-color: var(--burgunder);
+  padding: 10px;
+  font-weight: 100;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+.tags {
+  justify-items: center;
   margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+
+.other-projects {
+  text-align: center;
+  width: 400px;
+  margin: 60px;
+}
+
+.other-projects .tags p {
+  font-size: 18px;
+  color: var(--white);
+}
+
+.other-projects-image {
+  height: 400px;
+  width: auto;
+  object-fit: contain;
+  background-color: var(--navy);
+  border: 4px solid var(--white);
+}
+
+.other-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.other-projects p {
+  color: var(--gold);
+  font-size: 22px;
+}
+
+#otherProjects {
+background-color: var(--light-navy);
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+
+/* Buttons */
+
+.btn {
   width: 200px;
   font-size: 20px;
   background: none;
@@ -137,8 +214,7 @@ h4 {
   border-radius: 20px;
   color: var(--occean);
   padding: 8px;
-  margin: 20px;
-  margin-top: 32px;
+  margin: 4px;
   cursor: pointer;
 }
 
@@ -274,13 +350,19 @@ footer a{
 
 /* Responsive styling*/
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 680px) and (max-width: 840px) {
 
- 
-  
+  .work-box .tags p {
+    font-size: 16px;
+  }
+
+  .tag {
+    padding: 5px;
+  }
+
   .work-box {
     text-align: center;
-    width: 320px;
+    width: auto;
     margin: 50px;
   }
   
@@ -289,16 +371,15 @@ footer a{
   }
   
   .work-image {
-    height: 200px;
-    width: 320px;
+    height: 400px;
+    width: auto;
   }
 
   .btn {
     width: 130px;
     font-size: 16px;
     padding: 6px;
-    margin: 10px;
-    margin-top: 16px;
+    margin-top: 4px;
   }
 
   .menu a, li{
@@ -308,7 +389,52 @@ footer a{
   .menu ul li {
     padding: 10px;
   }
+}
 
+
+@media only screen and (min-width: 420px) and (max-width: 680px) {
+  .work-box .tags p {
+    font-size: 16px;
+  }
+
+  .tag {
+    padding: 5px;
+  }
+
+  .work-box {
+    text-align: center;
+    width: auto;
+    margin: 50px;
+  }
+  
+  .work-box p {
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 130px;
+    font-size: 16px;
+    padding: 6px;
+    margin-top: 4px;
+  }
+  
+  .work-image {
+    height: 300px;
+    width: 400px;
+  }
+
+  .menu a, li{
+    font-size: 18px;
+  }
+
+  .menu ul li {
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+
+  
   h1 {
     font-size: 32px;
   }
@@ -340,4 +466,58 @@ footer a{
   .fa-2x {
     font-size: 1.5em
   }
+
 }
+
+
+@media screen and (max-width: 420px){
+
+  .work-image {
+    height: 300px;
+    width: 300px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+
+.btn {
+  width: 130px;
+  font-size: 16px;
+  padding: 6px;
+  margin-top: 4px;
+}
+
+.menu a, li{
+  font-size: 14px;
+}
+
+.menu ul li {
+  padding: 2px;
+}
+
+.other-projects {
+  text-align: center;
+  width: 400px;
+  margin: 60px;
+}
+
+.other-projects p, .work-box p{
+  font-size: 18px;
+}
+
+.other-projects .tags p {
+  font-size: 18px;
+  color: var(--white);
+}
+
+.other-projects-image {
+  height: 300px;
+} 
+
+.work-box .tags p {
+  font-size: 14px;
+}
+  }
+  
