@@ -16,13 +16,13 @@ document.getElementById("ff-git").onclick = function () {
 };
 
 
-document.getElementById("rd-web").onclick = function () {
-  window.open ("https://rainy-days-august-wahlberg.netlify.app/", "_blank");
+document.getElementById("ai-web").onclick = function () {
+  window.open ("https://auction-it-2-by-wahlberg.netlify.app", "_blank");
 };
 
 
-document.getElementById("rd-git").onclick = function () {
-  window.open ("https://github.com/Noroff-FEU-Assignments/cross-course-project-AugustWahlberg", "_blank");
+document.getElementById("ai-git").onclick = function () {
+  window.open ("https://github.com/AugustWahlberg/auction-it-semester-project-2/tree/to-portfolio", "_blank");
 };
 
 
