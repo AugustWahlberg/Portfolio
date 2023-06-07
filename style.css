@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -13,8 +13,8 @@
   --light-navy: #0B1532;
   --burgunder: #4B3446;
   --occean: #5D7CC8;
-  --body-font: 'Source Sans Pro', sans-serif;
-  --heading-font: 'Open Sans', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+  --heading-font: 'Montserrat', sans-serif;
 }
 
 body {
@@ -22,6 +22,7 @@ body {
   margin: 0;
   background: var(--navy);
 }
+
 
 .menu a, li{
   color: var(--white);
@@ -71,7 +72,6 @@ header {
 h1, h2, h3, h4{
   font-family: var(--heading-font);
   text-align: center;
-  text-transform: uppercase;
 }
 
 h1, h2 {
@@ -84,14 +84,13 @@ h3, h4 {
 
 h1 {
   font-weight: 900;
-  padding-top: 200px;
+  padding-top: 100px;
   font-size: 46px;
   margin: 0px;
 }
 
 h2 {
-  font-weight: 900;
-  padding-top: 80px;
+  font-weight: 400;
   font-size: 40px;
 }
 
@@ -110,14 +109,14 @@ h4 {
 /* Containers and boxes */
 
 .work {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .work-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 2000px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -139,7 +138,7 @@ h4 {
 }
 
 .work-image {
-  height: 500px;
+  height: 400px;
   width: 800px;
   background-color: var(--occean);
   border: 4px solid var(--white);
@@ -164,45 +163,6 @@ h4 {
   margin-top: 10px;
   margin-bottom: 5px;
 }
-
-
-.other-projects {
-  text-align: center;
-  width: 400px;
-  margin: 60px;
-}
-
-.other-projects .tags p {
-  font-size: 18px;
-  color: var(--white);
-}
-
-.other-projects-image {
-  height: 400px;
-  width: auto;
-  object-fit: contain;
-  background-color: var(--navy);
-  border: 4px solid var(--white);
-}
-
-.other-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
-  max-width: 1400px;
-}
-.other-projects p {
-  color: var(--gold);
-  font-size: 22px;
-}
-
-#otherProjects {
-background-color: var(--light-navy);
-padding-top: 60px;
-padding-bottom: 60px;
-}
-
 
 /* Buttons */
 
@@ -238,7 +198,7 @@ footer {
 }
 
 .footer-content {
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
 }
 
@@ -251,16 +211,16 @@ footer h2{
 
 footer a{
   color: var(--white);
-  font-size: 22px;
+  font-size: 20px;
   display: inline-block;
-
   padding-bottom: 15px;
   line-height: 2.5;
 }
 
-.fab{
+.fab, .fas {
   color: var(--gold);
   padding-right: 15px;
+  font-size: 24px;
 }
 
 .fa-angle-down {
@@ -269,131 +229,16 @@ footer a{
   color: var(--white);
 }
 
-.fa-angle-down:hover, a:hover{
+.fa-angle-down:hover, a:hover {
   color: var(--gold);
 }
 
-
-/* Icon styling from Fontawsome*/
-
-.fa-github:before {
-  content: "\f09b"
-}
-
-.fa-linkedin:before {
-  content: "\f08c"
-}
-
-.fa-envelope:before {
-  content: "\f0e0"
-}
-
-.fa-angle-down:before {
-  content: "\f107"
-}
-
-.fa-2x {
-  font-size: 1.8em
-}
-
-.fa-4x {
-  font-size: 4em
-}
-
-.fa-brands,
-.fab {
-  font-family: "Font Awesome 6 Brands";
-  font-weight: 400
-}
-
-.fa,
-.fa-brands,
-.fa-solid,
-.fab,
-.fas
- {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: var(--fa-display, inline-block);
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto
-}
-
-:host,
-:root {
-  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Free";
-  font-style: normal;
-  font-weight: 900;
-  font-display: block;
-  src: url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.ttf) format("truetype")
-}
-
-.fa-solid,
-.fas {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Brands";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(../webfonts/fa-brands-400.woff2) format("woff2"), url(../webfonts/fa-brands-400.ttf) format("truetype")
+.fa-angle-down{
+  font-size: 62px;
 }
 
 
-/* Responsive styling*/
-
-@media only screen and (min-width: 680px) and (max-width: 840px) {
-
-  .work-box .tags p {
-    font-size: 16px;
-  }
-
-  .tag {
-    padding: 5px;
-  }
-
-  .work-box {
-    text-align: center;
-    width: auto;
-    margin: 50px;
-  }
-  
-  .work-box p {
-    font-size: 18px;
-  }
-  
-  .work-image {
-    height: 400px;
-    width: auto;
-  }
-
-  .btn {
-    width: 130px;
-    font-size: 16px;
-    padding: 6px;
-    margin-top: 4px;
-  }
-
-  .menu a, li{
-    font-size: 18px;
-  }
-
-  .menu ul li {
-    padding: 10px;
-  }
-}
-
-
-@media only screen and (min-width: 420px) and (max-width: 680px) {
+@media only screen and (min-width: 420px) and (max-width: 880px) {
   .work-box .tags p {
     font-size: 16px;
   }
@@ -420,7 +265,7 @@ footer a{
   }
   
   .work-image {
-    height: 300px;
+    height: 200px;
     width: 400px;
   }
 
@@ -457,7 +302,7 @@ footer a{
   }
 
   .footer-content {
-    width: 266px;
+    width: 280px;
   }
 
   .fa-4x {
@@ -521,4 +366,8 @@ footer a{
   font-size: 14px;
 }
   }
+
+
+  
+  
   
