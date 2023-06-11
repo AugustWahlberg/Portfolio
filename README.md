@@ -1,5 +1,5 @@
 # Portfolio - August Wahlberg
-![portfolio-website](https://user-images.githubusercontent.com/91577070/211971416-27bc1c7d-95d3-47a3-a061-ee37d8af61ef.PNG)
+![portfolio-website](https://github.com/AugustWahlberg/Portfolio/assets/91577070/cc48e746-6b5b-43a5-a88c-322e6b9d963e)
 
 **My personal portfolio website** 
 
